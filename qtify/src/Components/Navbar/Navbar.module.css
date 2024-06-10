@@ -1,6 +1,8 @@
 .nav{
+    
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     background-color: var(--color-primary);
     align-items: center;
+    height: 74px;
 }
