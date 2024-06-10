@@ -8,7 +8,7 @@ function Navbar() {
     <>
     <div className={styles.nav}>
     
-    <Button/>
+    <Button Child="Give Feedback"/>
     </div>
     </>
   )
