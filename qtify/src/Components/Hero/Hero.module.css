@@ -1,0 +1,16 @@
+.hero{
+    display: flex;
+    height: 270px;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    
+}
+
+.img{
+    width: 212px;
+    height: 212px;
+}
