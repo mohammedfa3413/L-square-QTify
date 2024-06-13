@@ -1,6 +1,7 @@
 import React from 'react'
 import { Chip, Tooltip} from "@mui/material"
 import styles from './Cards.module.css';
+import {Link} from "react-router-dom";
 
 
 
@@ -12,7 +13,7 @@ function Cards({data , type}) {
 
                     return (
                         <Tooltip title={`${songs.length} songs`} placement='top' arrow >
-                            <a href={`/album/${slug}`}>
+                            <Link to={`/album/${slug}`}>
                                 <div className={styles.wrapper}>
                                     <div className={styles.card}>
                                         <img
@@ -30,7 +31,7 @@ function Cards({data , type}) {
                                         <p>{title}</p>
                                     </div>
                                 </div>
-                            </a>
+                            </Link>
                         </Tooltip>
                       );
                 }
