@@ -17,3 +17,22 @@ code {
   --color-black : #121212;
   --color-white : #ffffff;
 }
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+
+.swiper-slide{
+  width: auto !important;
+}
+
+a,
+a:hover,
+a:focus,
+a:active{
+  text-decoration: none;
+  color: inherit;
+}
+

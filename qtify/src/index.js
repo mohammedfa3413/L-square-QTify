@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import {createBrowserRouter , RouterProvider} from 'react-router-dom'
 import HomePage from '../src/pages/HomePage/HomePage'
+import { Card } from '@mui/material';
 
 
 const router = createBrowserRouter([
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
       {
         path:'/',
         element:<HomePage/>
+      },
+      {
+        path:"/albums",
+        element:<Card/>
       }
     ]
   }
