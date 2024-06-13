@@ -3,13 +3,23 @@ import { Chip, Tooltip} from "@mui/material"
 import styles from './Cards.module.css';
 import {Link} from "react-router-dom";
 
-
-
 function Cards({data , type}) {
         const getCard = (type) => {
+            if (!data) {
+                return <div>Loading...</div>; // Handle undefined data case
+              }
+          
+
+
             switch(type){
                 case "album" :{
                     const {title ,slug, image,songs, follows} = data;
+
+                    if (!songs || !songs.length) {
+                        return <div>No songs available</div>;
+                    }
+
+
 
                     return (
                         <Tooltip title={`${songs.length} songs`} placement='top' arrow >

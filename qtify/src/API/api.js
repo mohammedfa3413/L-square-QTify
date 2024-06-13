@@ -24,3 +24,24 @@ export const fetchNewAlbums = async () =>{
 }
 
 
+
+export const fetchSongs = async () =>{
+    try {
+        const response = await axios.get(`${BACKEND_ENDPOINT}/songs`);
+        return response.data
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+
+export const fetchFilters = async () =>{
+    try {
+        const response = await axios.get(`${BACKEND_ENDPOINT}/genres`);
+        return response.data
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+

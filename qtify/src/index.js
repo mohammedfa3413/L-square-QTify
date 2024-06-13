@@ -16,10 +16,6 @@ const router = createBrowserRouter([
         path:'/',
         element:<HomePage/>
       },
-      {
-        path:"/albums",
-        element:<Card/>
-      }
     ]
   }
 ])
@@ -28,5 +24,8 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 <RouterProvider router={router}/>
 );
+
+
+
 
 
